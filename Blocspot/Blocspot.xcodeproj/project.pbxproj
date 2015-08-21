@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E370A0E1B782F4900E167DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A0D1B782F4900E167DA /* main.m */; };
+		6E370A111B782F4900E167DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A101B782F4900E167DA /* AppDelegate.m */; };
+		6E370A141B782F4900E167DA /* Blocspot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A121B782F4900E167DA /* Blocspot.xcdatamodeld */; };
+		6E370A171B782F4900E167DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A161B782F4900E167DA /* ViewController.m */; };
+		6E370A1A1B782F4900E167DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E370A181B782F4900E167DA /* Main.storyboard */; };
+		6E370A1C1B782F4900E167DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E370A1B1B782F4900E167DA /* Images.xcassets */; };
+		6E370A1F1B782F4900E167DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E370A1D1B782F4900E167DA /* LaunchScreen.xib */; };
+		6E370A2B1B782F4900E167DA /* BlocspotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A2A1B782F4900E167DA /* BlocspotTests.m */; };
+		6E370A361B78384600E167DA /* BlocspotListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A351B78384600E167DA /* BlocspotListTableViewController.m */; };
+		6E370A391B7838C100E167DA /* BlocspotMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A381B7838C100E167DA /* BlocspotMapViewController.m */; };
+		6E370A3B1B783E6A00E167DA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E370A3A1B783E6A00E167DA /* MapKit.framework */; };
+		6E370A3E1B7843B500E167DA /* BlocspotHomeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A3D1B7843B500E167DA /* BlocspotHomeCollectionViewController.m */; };
+		6E370A411B78462200E167DA /* CategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A401B78462200E167DA /* CategoryCollectionViewCell.m */; };
+		6E370A441B78552100E167DA /* UserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A431B78552100E167DA /* UserLocation.m */; };
+		6E370A4B1B79A28A00E167DA /* SearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A4A1B79A28A00E167DA /* SearchRequest.m */; };
+		6E370A4E1B7C463D00E167DA /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A4D1B7C463D00E167DA /* SearchViewController.m */; };
+		6E370A501B7C46CD00E167DA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E370A4F1B7C46CD00E167DA /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E370A251B782F4900E167DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E370A001B782F4900E167DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E370A071B782F4900E167DA;
+			remoteInfo = Blocspot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E370A081B782F4900E167DA /* Blocspot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocspot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E370A0C1B782F4900E167DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E370A0D1B782F4900E167DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E370A0F1B782F4900E167DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6E370A101B782F4900E167DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6E370A131B782F4900E167DA /* Blocspot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Blocspot.xcdatamodel; sourceTree = "<group>"; };
+		6E370A151B782F4900E167DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6E370A161B782F4900E167DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6E370A191B782F4900E167DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E370A1B1B782F4900E167DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6E370A1E1B782F4900E167DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6E370A241B782F4900E167DA /* BlocspotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocspotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E370A291B782F4900E167DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E370A2A1B782F4900E167DA /* BlocspotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocspotTests.m; sourceTree = "<group>"; };
+		6E370A341B78384600E167DA /* BlocspotListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocspotListTableViewController.h; sourceTree = "<group>"; };
+		6E370A351B78384600E167DA /* BlocspotListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocspotListTableViewController.m; sourceTree = "<group>"; };
+		6E370A371B7838C100E167DA /* BlocspotMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocspotMapViewController.h; sourceTree = "<group>"; };
+		6E370A381B7838C100E167DA /* BlocspotMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocspotMapViewController.m; sourceTree = "<group>"; };
+		6E370A3A1B783E6A00E167DA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6E370A3C1B7843B500E167DA /* BlocspotHomeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocspotHomeCollectionViewController.h; sourceTree = "<group>"; };
+		6E370A3D1B7843B500E167DA /* BlocspotHomeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocspotHomeCollectionViewController.m; sourceTree = "<group>"; };
+		6E370A3F1B78462200E167DA /* CategoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryCollectionViewCell.h; sourceTree = "<group>"; };
+		6E370A401B78462200E167DA /* CategoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCollectionViewCell.m; sourceTree = "<group>"; };
+		6E370A421B78552100E167DA /* UserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLocation.h; sourceTree = "<group>"; };
+		6E370A431B78552100E167DA /* UserLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocation.m; sourceTree = "<group>"; };
+		6E370A491B79A28A00E167DA /* SearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchRequest.h; sourceTree = "<group>"; };
+		6E370A4A1B79A28A00E167DA /* SearchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchRequest.m; sourceTree = "<group>"; };
+		6E370A4C1B7C463D00E167DA /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		6E370A4D1B7C463D00E167DA /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		6E370A4F1B7C46CD00E167DA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E370A051B782F4900E167DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E370A501B7C46CD00E167DA /* CoreLocation.framework in Frameworks */,
+				6E370A3B1B783E6A00E167DA /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E370A211B782F4900E167DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E3709FF1B782F4900E167DA = {
+			isa = PBXGroup;
+			children = (
+				6E370A4F1B7C46CD00E167DA /* CoreLocation.framework */,
+				6E370A3A1B783E6A00E167DA /* MapKit.framework */,
+				6E370A0A1B782F4900E167DA /* Blocspot */,
+				6E370A271B782F4900E167DA /* BlocspotTests */,
+				6E370A091B782F4900E167DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E370A091B782F4900E167DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E370A081B782F4900E167DA /* Blocspot.app */,
+				6E370A241B782F4900E167DA /* BlocspotTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E370A0A1B782F4900E167DA /* Blocspot */ = {
+			isa = PBXGroup;
+			children = (
+				6E370A0F1B782F4900E167DA /* AppDelegate.h */,
+				6E370A101B782F4900E167DA /* AppDelegate.m */,
+				6E370A3C1B7843B500E167DA /* BlocspotHomeCollectionViewController.h */,
+				6E370A3D1B7843B500E167DA /* BlocspotHomeCollectionViewController.m */,
+				6E370A4C1B7C463D00E167DA /* SearchViewController.h */,
+				6E370A4D1B7C463D00E167DA /* SearchViewController.m */,
+				6E370A341B78384600E167DA /* BlocspotListTableViewController.h */,
+				6E370A351B78384600E167DA /* BlocspotListTableViewController.m */,
+				6E370A371B7838C100E167DA /* BlocspotMapViewController.h */,
+				6E370A381B7838C100E167DA /* BlocspotMapViewController.m */,
+				6E370A3F1B78462200E167DA /* CategoryCollectionViewCell.h */,
+				6E370A401B78462200E167DA /* CategoryCollectionViewCell.m */,
+				6E370A181B782F4900E167DA /* Main.storyboard */,
+				6E370A1B1B782F4900E167DA /* Images.xcassets */,
+				6E370A1D1B782F4900E167DA /* LaunchScreen.xib */,
+				6E370A121B782F4900E167DA /* Blocspot.xcdatamodeld */,
+				6E370A451B78553600E167DA /* BlocSpot_DataModels */,
+				6E370A0B1B782F4900E167DA /* Supporting Files */,
+			);
+			path = Blocspot;
+			sourceTree = "<group>";
+		};
+		6E370A0B1B782F4900E167DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E370A151B782F4900E167DA /* ViewController.h */,
+				6E370A161B782F4900E167DA /* ViewController.m */,
+				6E370A0C1B782F4900E167DA /* Info.plist */,
+				6E370A0D1B782F4900E167DA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E370A271B782F4900E167DA /* BlocspotTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E370A2A1B782F4900E167DA /* BlocspotTests.m */,
+				6E370A281B782F4900E167DA /* Supporting Files */,
+			);
+			path = BlocspotTests;
+			sourceTree = "<group>";
+		};
+		6E370A281B782F4900E167DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E370A291B782F4900E167DA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E370A451B78553600E167DA /* BlocSpot_DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				6E370A421B78552100E167DA /* UserLocation.h */,
+				6E370A431B78552100E167DA /* UserLocation.m */,
+				6E370A491B79A28A00E167DA /* SearchRequest.h */,
+				6E370A4A1B79A28A00E167DA /* SearchRequest.m */,
+			);
+			name = BlocSpot_DataModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E370A071B782F4900E167DA /* Blocspot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E370A2E1B782F4900E167DA /* Build configuration list for PBXNativeTarget "Blocspot" */;
+			buildPhases = (
+				6E370A041B782F4900E167DA /* Sources */,
+				6E370A051B782F4900E167DA /* Frameworks */,
+				6E370A061B782F4900E167DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blocspot;
+			productName = Blocspot;
+			productReference = 6E370A081B782F4900E167DA /* Blocspot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E370A231B782F4900E167DA /* BlocspotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E370A311B782F4900E167DA /* Build configuration list for PBXNativeTarget "BlocspotTests" */;
+			buildPhases = (
+				6E370A201B782F4900E167DA /* Sources */,
+				6E370A211B782F4900E167DA /* Frameworks */,
+				6E370A221B782F4900E167DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E370A261B782F4900E167DA /* PBXTargetDependency */,
+			);
+			name = BlocspotTests;
+			productName = BlocspotTests;
+			productReference = 6E370A241B782F4900E167DA /* BlocspotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E370A001B782F4900E167DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Casey Ward";
+				TargetAttributes = {
+					6E370A071B782F4900E167DA = {
+						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					6E370A231B782F4900E167DA = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 6E370A071B782F4900E167DA;
+					};
+				};
+			};
+			buildConfigurationList = 6E370A031B782F4900E167DA /* Build configuration list for PBXProject "Blocspot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E3709FF1B782F4900E167DA;
+			productRefGroup = 6E370A091B782F4900E167DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E370A071B782F4900E167DA /* Blocspot */,
+				6E370A231B782F4900E167DA /* BlocspotTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E370A061B782F4900E167DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E370A1A1B782F4900E167DA /* Main.storyboard in Resources */,
+				6E370A1F1B782F4900E167DA /* LaunchScreen.xib in Resources */,
+				6E370A1C1B782F4900E167DA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E370A221B782F4900E167DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E370A041B782F4900E167DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E370A361B78384600E167DA /* BlocspotListTableViewController.m in Sources */,
+				6E370A391B7838C100E167DA /* BlocspotMapViewController.m in Sources */,
+				6E370A441B78552100E167DA /* UserLocation.m in Sources */,
+				6E370A111B782F4900E167DA /* AppDelegate.m in Sources */,
+				6E370A141B782F4900E167DA /* Blocspot.xcdatamodeld in Sources */,
+				6E370A411B78462200E167DA /* CategoryCollectionViewCell.m in Sources */,
+				6E370A4B1B79A28A00E167DA /* SearchRequest.m in Sources */,
+				6E370A171B782F4900E167DA /* ViewController.m in Sources */,
+				6E370A0E1B782F4900E167DA /* main.m in Sources */,
+				6E370A4E1B7C463D00E167DA /* SearchViewController.m in Sources */,
+				6E370A3E1B7843B500E167DA /* BlocspotHomeCollectionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E370A201B782F4900E167DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E370A2B1B782F4900E167DA /* BlocspotTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E370A261B782F4900E167DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E370A071B782F4900E167DA /* Blocspot */;
+			targetProxy = 6E370A251B782F4900E167DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E370A181B782F4900E167DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E370A191B782F4900E167DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E370A1D1B782F4900E167DA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E370A1E1B782F4900E167DA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E370A2C1B782F4900E167DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6E370A2D1B782F4900E167DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E370A2F1B782F4900E167DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Blocspot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6E370A301B782F4900E167DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Blocspot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6E370A321B782F4900E167DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlocspotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blocspot.app/Blocspot";
+			};
+			name = Debug;
+		};
+		6E370A331B782F4900E167DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlocspotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blocspot.app/Blocspot";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E370A031B782F4900E167DA /* Build configuration list for PBXProject "Blocspot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E370A2C1B782F4900E167DA /* Debug */,
+				6E370A2D1B782F4900E167DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E370A2E1B782F4900E167DA /* Build configuration list for PBXNativeTarget "Blocspot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E370A2F1B782F4900E167DA /* Debug */,
+				6E370A301B782F4900E167DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E370A311B782F4900E167DA /* Build configuration list for PBXNativeTarget "BlocspotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E370A321B782F4900E167DA /* Debug */,
+				6E370A331B782F4900E167DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6E370A121B782F4900E167DA /* Blocspot.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6E370A131B782F4900E167DA /* Blocspot.xcdatamodel */,
+			);
+			currentVersion = 6E370A131B782F4900E167DA /* Blocspot.xcdatamodel */;
+			path = Blocspot.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6E370A001B782F4900E167DA /* Project object */;
+}
