@@ -7,11 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
+#import "UserLocation.h"
+#import "BlocSpotCategory.h"
+#import "POI.h"
+#import "DataSource2.h"
+#import "AddCategoryModalViewController.h"
+#import "BlocspotListTableViewController.h"
 
-@interface BlocspotMapViewController : UIViewController
+@interface BlocspotMapViewController : UIViewController //<addCategoryDelegate>
 
-@property (nonatomic, strong) NSArray *searchResults;
+@property (strong, nonatomic) NSArray *pointAnnotationsArray;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (assign, nonatomic) MKAnnotationView *annotationView;
+@property (nonatomic, strong) id <MKAnnotation> selectedAnnotation;
+@property (nonatomic, strong) POI *poiWithAssignedCategory;//poaaibly don't need this
+
+@property (nonatomic, strong) POI *selectedPOIFavorite;//new stuff 10/6
+@property (nonatomic, strong) BlocSpotCategory *assignedCategory;
+
+@property (nonatomic, assign) CLLocationCoordinate2D *userCoordinate;
 
 @end

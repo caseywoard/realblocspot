@@ -9,13 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
+#import "DataSource2.h"
 
-@interface UserLocation : NSObject
+@interface UserLocation : NSObject <CLLocationManagerDelegate>
 
 + (instancetype) sharedLocationInstance;
 
-@property (nonatomic) CLLocationManager *locationManager;
+@property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic) CLLocation *lastLocation;
-//@property (nonatomic)
+
+//- (void)startShowingNotifications;
 
 @end

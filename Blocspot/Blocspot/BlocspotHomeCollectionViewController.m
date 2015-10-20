@@ -15,6 +15,8 @@
 @property (nonatomic,strong) NSArray            *dataSourceForSearchResult;
 @property (nonatomic,strong) UISearchBar        *searchBar;
 @property (nonatomic,strong) UIRefreshControl   *refreshControl;
+
+
 @end
 
 @implementation BlocspotHomeCollectionViewController
@@ -81,6 +83,8 @@ static NSString * const reuseIdentifier = @"default_category";
     
     return cell;
 }
+
+
 
 #pragma mark <UICollectionViewDelegate>
 

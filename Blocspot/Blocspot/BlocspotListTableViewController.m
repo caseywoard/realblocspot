@@ -9,7 +9,8 @@
 #import "BlocspotListTableViewController.h"
 #import "SearchViewController.h"
 #import "BlocspotMapViewController.h"
-
+@import CoreLocation;
+@import MapKit;
 
 @interface BlocspotListTableViewController ()
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *mapViewButton;
@@ -58,7 +59,7 @@
     cell.textLabel.text = item.name;
     
     
-    NSLog(@"cellforrowatindexpath was called");
+    //NSLog(@"cellforrowatindexpath was called");
     return cell;
 
 }
@@ -68,16 +69,37 @@
         UITableViewCell *cell = sender;
         NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
         
+        
         MKMapItem *item = self.searchResults[indexPath.row];
-        NSMutableArray *tempArray = [[NSMutableArray alloc] init];
-        [tempArray addObject:item.placemark];
         
-        BlocspotMapViewController *pointOfInterestOnMap = (BlocspotMapViewController *)segue.destinationViewController;
-        pointOfInterestOnMap.searchResults = tempArray;
-    } else if ([segue.identifier isEqualToString:@"mapViewSegue"]) {
+        NSMutableArray *pointAnnotationsArray = [[NSMutableArray alloc] init];
         
-        BlocspotMapViewController *pointsOfInterestOnMap = (BlocspotMapViewController *)segue.destinationViewController;
-        pointsOfInterestOnMap.searchResults = self.searchResults;
+        MKPointAnnotation *pointAnnotation = [[MKPointAnnotation alloc] init];
+        pointAnnotation.coordinate = item.placemark.coordinate;
+        pointAnnotation.title = item.name; //what about using item.placemark.name instead? what's the diff?
+        
+        [pointAnnotationsArray addObject:pointAnnotation];
+        
+        BlocspotMapViewController *mapMVC = (BlocspotMapViewController *)segue.destinationViewController;
+        mapMVC.pointAnnotationsArray = pointAnnotationsArray;
+    
+        
+    } else if ([segue.identifier isEqualToString:@"mapViewFlipSegue"]) {
+        NSMutableArray *pointAnnotationsArray = [[NSMutableArray alloc] init];
+        
+        for (MKMapItem *item in self.searchResults) {
+            
+            MKPointAnnotation *pointAnnotation = [[MKPointAnnotation alloc] init];
+            pointAnnotation.coordinate = item.placemark.coordinate;
+            pointAnnotation.title = item.name;
+
+            [pointAnnotationsArray addObject:pointAnnotation];
+           
+        }
+        
+        BlocspotMapViewController *mapMVC = (BlocspotMapViewController *)segue.destinationViewController;
+        mapMVC.pointAnnotationsArray = pointAnnotationsArray;
+        
     }
 }
 

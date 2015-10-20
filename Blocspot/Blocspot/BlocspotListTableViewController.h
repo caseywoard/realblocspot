@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserLocation.h"
+#import "DataSource2.h"
+#import "POI.h"
+
+
 @import MapKit;
 
 @interface BlocspotListTableViewController : UITableViewController
 
 @property (nonatomic, strong) NSArray *searchResults;
-@property (nonatomic, strong) MKMapView *tempMap;
+//@property (nonatomic, strong) MKMapView *tempMap;
 
 @end

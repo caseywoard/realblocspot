@@ -19,11 +19,18 @@
 		6E370A391B7838C100E167DA /* BlocspotMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A381B7838C100E167DA /* BlocspotMapViewController.m */; };
 		6E370A3B1B783E6A00E167DA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E370A3A1B783E6A00E167DA /* MapKit.framework */; };
 		6E370A3E1B7843B500E167DA /* BlocspotHomeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A3D1B7843B500E167DA /* BlocspotHomeCollectionViewController.m */; };
-		6E370A411B78462200E167DA /* CategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A401B78462200E167DA /* CategoryCollectionViewCell.m */; };
 		6E370A441B78552100E167DA /* UserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A431B78552100E167DA /* UserLocation.m */; };
 		6E370A4B1B79A28A00E167DA /* SearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A4A1B79A28A00E167DA /* SearchRequest.m */; };
 		6E370A4E1B7C463D00E167DA /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E370A4D1B7C463D00E167DA /* SearchViewController.m */; };
 		6E370A501B7C46CD00E167DA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E370A4F1B7C46CD00E167DA /* CoreLocation.framework */; };
+		6E71A3021BD34FF80014E8A2 /* FlipCustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E71A3011BD34FF80014E8A2 /* FlipCustomSegue.m */; };
+		6ECA24B11BC8C2E000F55AA3 /* FilterByCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECA24B01BC8C2E000F55AA3 /* FilterByCategoryViewController.m */; };
+		6ED0C4E21B8AADE9006741B4 /* POI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0C4E11B8AADE9006741B4 /* POI.m */; };
+		6ED0C5241B8D61A0006741B4 /* BlocSpotCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0C5231B8D61A0006741B4 /* BlocSpotCategory.m */; };
+		6ED0C5301B93A38C006741B4 /* DataSource2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0C52F1B93A38C006741B4 /* DataSource2.m */; };
+		6ED0C5331B9E4DFD006741B4 /* PopUpDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0C5321B9E4DFD006741B4 /* PopUpDetailView.m */; };
+		6ED0C5391B9E8F88006741B4 /* AddCategoryModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED0C5381B9E8F88006741B4 /* AddCategoryModalViewController.m */; };
+		6ED22BC21BB738700041D03D /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED22BC11BB738700041D03D /* CustomAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +65,6 @@
 		6E370A3A1B783E6A00E167DA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6E370A3C1B7843B500E167DA /* BlocspotHomeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocspotHomeCollectionViewController.h; sourceTree = "<group>"; };
 		6E370A3D1B7843B500E167DA /* BlocspotHomeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocspotHomeCollectionViewController.m; sourceTree = "<group>"; };
-		6E370A3F1B78462200E167DA /* CategoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryCollectionViewCell.h; sourceTree = "<group>"; };
-		6E370A401B78462200E167DA /* CategoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCollectionViewCell.m; sourceTree = "<group>"; };
 		6E370A421B78552100E167DA /* UserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLocation.h; sourceTree = "<group>"; };
 		6E370A431B78552100E167DA /* UserLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocation.m; sourceTree = "<group>"; };
 		6E370A491B79A28A00E167DA /* SearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchRequest.h; sourceTree = "<group>"; };
@@ -67,6 +72,23 @@
 		6E370A4C1B7C463D00E167DA /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		6E370A4D1B7C463D00E167DA /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		6E370A4F1B7C46CD00E167DA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6E71A3001BD34FF80014E8A2 /* FlipCustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipCustomSegue.h; sourceTree = "<group>"; };
+		6E71A3011BD34FF80014E8A2 /* FlipCustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipCustomSegue.m; sourceTree = "<group>"; };
+		6ECA24AF1BC8C2E000F55AA3 /* FilterByCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterByCategoryViewController.h; sourceTree = "<group>"; };
+		6ECA24B01BC8C2E000F55AA3 /* FilterByCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterByCategoryViewController.m; sourceTree = "<group>"; };
+		6ED0C4E01B8AADE9006741B4 /* POI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POI.h; sourceTree = "<group>"; };
+		6ED0C4E11B8AADE9006741B4 /* POI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POI.m; sourceTree = "<group>"; };
+		6ED0C4E31B8AC358006741B4 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		6ED0C5221B8D61A0006741B4 /* BlocSpotCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocSpotCategory.h; sourceTree = "<group>"; };
+		6ED0C5231B8D61A0006741B4 /* BlocSpotCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocSpotCategory.m; sourceTree = "<group>"; };
+		6ED0C52E1B93A38C006741B4 /* DataSource2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource2.h; sourceTree = "<group>"; };
+		6ED0C52F1B93A38C006741B4 /* DataSource2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource2.m; sourceTree = "<group>"; };
+		6ED0C5311B9E4DFD006741B4 /* PopUpDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpDetailView.h; sourceTree = "<group>"; };
+		6ED0C5321B9E4DFD006741B4 /* PopUpDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpDetailView.m; sourceTree = "<group>"; };
+		6ED0C5371B9E8F88006741B4 /* AddCategoryModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCategoryModalViewController.h; sourceTree = "<group>"; };
+		6ED0C5381B9E8F88006741B4 /* AddCategoryModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCategoryModalViewController.m; sourceTree = "<group>"; };
+		6ED22BC01BB738700041D03D /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
+		6ED22BC11BB738700041D03D /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +134,8 @@
 		6E370A0A1B782F4900E167DA /* Blocspot */ = {
 			isa = PBXGroup;
 			children = (
+				6E71A3001BD34FF80014E8A2 /* FlipCustomSegue.h */,
+				6E71A3011BD34FF80014E8A2 /* FlipCustomSegue.m */,
 				6E370A0F1B782F4900E167DA /* AppDelegate.h */,
 				6E370A101B782F4900E167DA /* AppDelegate.m */,
 				6E370A3C1B7843B500E167DA /* BlocspotHomeCollectionViewController.h */,
@@ -122,8 +146,14 @@
 				6E370A351B78384600E167DA /* BlocspotListTableViewController.m */,
 				6E370A371B7838C100E167DA /* BlocspotMapViewController.h */,
 				6E370A381B7838C100E167DA /* BlocspotMapViewController.m */,
-				6E370A3F1B78462200E167DA /* CategoryCollectionViewCell.h */,
-				6E370A401B78462200E167DA /* CategoryCollectionViewCell.m */,
+				6ED22BC01BB738700041D03D /* CustomAnnotation.h */,
+				6ED22BC11BB738700041D03D /* CustomAnnotation.m */,
+				6ED0C5311B9E4DFD006741B4 /* PopUpDetailView.h */,
+				6ED0C5321B9E4DFD006741B4 /* PopUpDetailView.m */,
+				6ED0C5371B9E8F88006741B4 /* AddCategoryModalViewController.h */,
+				6ED0C5381B9E8F88006741B4 /* AddCategoryModalViewController.m */,
+				6ECA24AF1BC8C2E000F55AA3 /* FilterByCategoryViewController.h */,
+				6ECA24B01BC8C2E000F55AA3 /* FilterByCategoryViewController.m */,
 				6E370A181B782F4900E167DA /* Main.storyboard */,
 				6E370A1B1B782F4900E167DA /* Images.xcassets */,
 				6E370A1D1B782F4900E167DA /* LaunchScreen.xib */,
@@ -165,8 +195,15 @@
 		6E370A451B78553600E167DA /* BlocSpot_DataModels */ = {
 			isa = PBXGroup;
 			children = (
+				6ED0C4E31B8AC358006741B4 /* DataSource.h */,
+				6ED0C52E1B93A38C006741B4 /* DataSource2.h */,
+				6ED0C52F1B93A38C006741B4 /* DataSource2.m */,
+				6ED0C5221B8D61A0006741B4 /* BlocSpotCategory.h */,
+				6ED0C5231B8D61A0006741B4 /* BlocSpotCategory.m */,
 				6E370A421B78552100E167DA /* UserLocation.h */,
 				6E370A431B78552100E167DA /* UserLocation.m */,
+				6ED0C4E01B8AADE9006741B4 /* POI.h */,
+				6ED0C4E11B8AADE9006741B4 /* POI.m */,
 				6E370A491B79A28A00E167DA /* SearchRequest.h */,
 				6E370A4A1B79A28A00E167DA /* SearchRequest.m */,
 			);
@@ -278,16 +315,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED0C4E21B8AADE9006741B4 /* POI.m in Sources */,
 				6E370A361B78384600E167DA /* BlocspotListTableViewController.m in Sources */,
 				6E370A391B7838C100E167DA /* BlocspotMapViewController.m in Sources */,
 				6E370A441B78552100E167DA /* UserLocation.m in Sources */,
+				6ED0C5301B93A38C006741B4 /* DataSource2.m in Sources */,
 				6E370A111B782F4900E167DA /* AppDelegate.m in Sources */,
 				6E370A141B782F4900E167DA /* Blocspot.xcdatamodeld in Sources */,
-				6E370A411B78462200E167DA /* CategoryCollectionViewCell.m in Sources */,
+				6ED0C5241B8D61A0006741B4 /* BlocSpotCategory.m in Sources */,
 				6E370A4B1B79A28A00E167DA /* SearchRequest.m in Sources */,
+				6ED22BC21BB738700041D03D /* CustomAnnotation.m in Sources */,
+				6ECA24B11BC8C2E000F55AA3 /* FilterByCategoryViewController.m in Sources */,
+				6ED0C5391B9E8F88006741B4 /* AddCategoryModalViewController.m in Sources */,
 				6E370A171B782F4900E167DA /* ViewController.m in Sources */,
 				6E370A0E1B782F4900E167DA /* main.m in Sources */,
 				6E370A4E1B7C463D00E167DA /* SearchViewController.m in Sources */,
+				6E71A3021BD34FF80014E8A2 /* FlipCustomSegue.m in Sources */,
+				6ED0C5331B9E4DFD006741B4 /* PopUpDetailView.m in Sources */,
 				6E370A3E1B7843B500E167DA /* BlocspotHomeCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -403,7 +447,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

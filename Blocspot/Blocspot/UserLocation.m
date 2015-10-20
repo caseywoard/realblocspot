@@ -9,7 +9,7 @@
 #import "UserLocation.h"
 
 
-@interface UserLocation () <CLLocationManagerDelegate>
+@interface UserLocation ()
 
 
 
@@ -33,54 +33,70 @@
     if (self) {
         //getting permission to access location
         
-        
-        //[[self mapView] setShowsUserLocation:YES];
-        
         [self startStandardUpdates];
-        [self startSignificantChangeUpdates];
+//        [self startSignificantChangeUpdates];
+        
         
     }
     return self;
 }
 
-- (void)startStandardUpdates {
-    
-    // Create the location manager if this object does not
-    if (nil == self.locationManager) {
-        self.locationManager = [[CLLocationManager alloc] init];
-        [self.locationManager requestWhenInUseAuthorization]; //use when locationmanger is made
-    }
+- (void)startStandardUpdates { //this was missing. jsut added it back.
+   
+    self.locationManager = [[CLLocationManager alloc] init];
+  
     self.locationManager.delegate = self;
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
-    self.locationManager.distanceFilter = 500; // meters
-    if([self.locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
-        [self.locationManager requestAlwaysAuthorization];
-         //Or [self.locationManager requestWhenInUseAuthorization];
+    
+    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [self.locationManager requestWhenInUseAuthorization];
     }
+    
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+    
+    // Set a movement threshold for new events.
+    
+    self.locationManager.distanceFilter = 500;
+    self.locationManager.pausesLocationUpdatesAutomatically = YES;
+    self.locationManager.activityType = CLActivityTypeOther;
     
     [self.locationManager startUpdatingLocation];
+
     
 }
 
-- (void)startSignificantChangeUpdates
 
-{
-    
-    // Create the location manager if this object does not
-    // already have one.
-    
-    if (nil == self.locationManager) {
-        self.locationManager = [[CLLocationManager alloc] init];
-        self.locationManager.delegate = self;
-        [self.locationManager startMonitoringSignificantLocationChanges];
-    }
-}
+
+
 
 //when is this method called?
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     
     //self.lastLocation = locations[0];
     self.lastLocation = locations.lastObject;
+    
+    
+ 
+}
+
+-(void) locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    NSString *errorMsg = @"Error obtaining location";
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:errorMsg delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+
+    // Check status to see if the app is authorized
+    
+    BOOL canUseLocationNotifications = (status == kCLAuthorizationStatusAuthorizedWhenInUse);
+    
+    if (canUseLocationNotifications) {
+        
+       // [self startShowingLocationNotifications]; // Custom method defined below
+        
+    }
+    
 }
 
 

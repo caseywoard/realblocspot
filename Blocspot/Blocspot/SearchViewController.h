@@ -7,10 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-@import MapKit;
+#import "UserLocation.h"
+#import "DataSource2.h"
+#import "BlocSpotCategory.h"
+#import "FilterByCategoryViewController.h"
 
-@interface SearchViewController : UIViewController <UISearchBarDelegate>
+@interface SearchViewController : UIViewController <UISearchBarDelegate, UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) NSArray *searchResults;
 @property (nonatomic, strong) MKLocalSearchRequest *request;
+@property (nonatomic, strong) NSMutableArray *categories;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic) BOOL categoryListViewChosen;
+@property (nonatomic, strong) POI *selectedFavoritePOI;
+
 @end

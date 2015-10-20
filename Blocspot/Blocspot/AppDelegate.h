@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "DataSource.h"
+#import "UserLocation.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
